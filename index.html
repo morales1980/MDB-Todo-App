@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="container">
+    <h1>Todo list with edit option</h1>
     <div class="todo">
       <div class="todo__buttons">
         <button id="button-add" class="todo__button--add" type="button">Add</button>
@@ -17,6 +18,11 @@
         <button id="button-clear" class="todo__button--clear" type="button">Clear</button>
       </div>
       <div id="display" class="todo__display"></div>
+      <form id="edit-form" class="todo__edit-form">
+        <input type="text" placeholder="Enter new task name here">
+        <button type="submit">Save</button>
+        <span id="edit-message" class="todo__edit-message" >New task name cannot be empty!</span>
+      </form>
     </div>
   </div>
   <script src="js/compiled.js"></script>
